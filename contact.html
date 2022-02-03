@@ -23,10 +23,22 @@
                 content-visibility: auto;      
             }    
         }
-        .fadein{
+        a{
+            text-decoration: none;
+          }
+          .fadein{
               animation: fadeInAnimation ease 1.5s;
               animation-iteration-count: 1;
               animation-fill-mode: forwards;
+          }
+          .topnav{
+            display: none;
+          }
+          .f1{
+              font-size: 15vh;
+          }
+          .f2{
+              font-size: 5vh;
           }
           @keyframes fadeInAnimation {
               0% {
@@ -36,12 +48,26 @@
                   opacity: 1;
               }
           }
+          @media screen and (max-width: 992px){
+            .sidenav{
+              display: none;
+            }
+            .topnav{
+              display: block;
+            }
+            .f1{
+                font-size: 10vh;
+            }
+            .f2{
+                font-size: 3vh;
+            }
+          }
       </style>
     </head>
 
     <body style="margin:0; padding:0; font-family: 'Open Sans', sans-serif;">
       <div class="row container-fluid mr-0 pr-0 ml-0 pl-0" style="height:100%;">
-        <div class="col-2 pl-0 pr-0 container-fluid" style="height:100vh; background-color:#198754; position:fixed; z-index:3; top:0; left:0">
+        <div class="sidenav col-2 pl-0 pr-0 container-fluid" style="height:100vh; background-color:#198754; position:fixed; z-index:3; top:0; left:0">
             <nav class ="navbar" style="height:100%; background-color:#198754; font-size:20px; position:-webkit-sticky;position:sticky; top:0px">
 
               <ul class ="nav navbar-nav">
@@ -79,9 +105,17 @@
 
         <div class="col-2 pl-0 pr-0"></div>
 
-        <div class="col-10 pl-0 pr-0">
+        <div class="col-lg-10 pl-0 pr-0">
 
-          
+          <div class="topnav">
+            <div class="row align-items-center" style="margin:0px; color: white;">
+              <div class="col-3" style="background-color:#dc3545; padding:5px; height:35px;"><a href="about.html" style="color: white;"> About </a></div>
+              <div class="col-3" style="background-color:#0d6efd; padding:5px; height:35px;"><a href="events.html" style="color: white;"> Events </a></div>
+              <div class="col-3" style="background-color:#ffc107; padding:5px; height:35px;"><a href="gdscteam.html" style="color: white;"> Team </a></div>
+              <div class="col-3" style="background-color:#198754; padding:5px; height:35px;"><a href="contact.html" style="color: white;"> Contact </a></div>
+            </div>
+            </div>   
+
 
           <div class="" style="margin:0px;">
           <div class="banner-1 " style="height:40vh;background: linear-gradient(110deg, #dc3545 60%,#ffc107  60%);">
@@ -90,15 +124,15 @@
             <div class="container px-5">
                <div class="row align-items-center">
                  <div class="col-6">
-                   <div class="fadein" style="font-family: 'Poppins', sans-serif;color: white;font-size:15vh;text-shadow: 0.5px 0.5px black;">Contact Us</div>
-                   <div class="fadein" style="font-family: 'Poppins', sans-serif;color: white;font-size:5vh;text-shadow: 0.5px 0.5px black;margin-left:10px;">Lets Connect!</div> 
+                   <div class="fadein f1" style="font-family: 'Poppins', sans-serif;color: white;text-shadow: 0.5px 0.5px black;">Contact Us</div>
+                   <div class="fadein f2" style="font-family: 'Poppins', sans-serif;color: white;text-shadow: 0.5px 0.5px black;margin-left:10px;">Lets Connect!</div> 
                  </div>
   
                  <div class="col-2"></div>
                 
-                 <div class="col-4" style="padding: 0px 40px;">
-                   <img  class="fadein" src="photos/logo1.png" style="max-width: 100%; margin:25px;">
-                 </div>
+                 <div class="col-4">
+                  <img  class="fadein img-fluid" src="photos\logonew.jpg" style="width:auto; max-height: 30vh; margin:25px; border-radius: 50%;">
+                </div> 
                </div>
             </div>
       
