@@ -33,6 +33,7 @@ body{
 }
 .wrapper .row{
   display: flex;
+  margin: 40px;
 }
 .wrapper .row-1{
   justify-content: flex-start;
@@ -122,6 +123,30 @@ body{
 .row section .bottom a:hover{
   transform: scale(0.97);
 }
+
+.img-row2 {
+  position: relative;
+  left: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-row2 img{
+  width: 60%;
+}
+
+.img-row1 {
+  position: relative;
+  left: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-row1 img{
+  width: 60%;
+}
+
+
 @media(max-width: 790px){
   .wrapper .center-line{
     left: 40px;
